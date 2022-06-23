@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Animal {
+public abstract class Animal {
 
     protected String animalSpecies;
     protected int age;
@@ -24,6 +24,14 @@ public class Animal {
                 ", weight=" + weight +
                 '}';
     }
+
+
+    protected void eat(){
+        System.out.println("Eating.....");
+    }
+
+
+    abstract void move();
 
 
     public static void zivotinje(Animal[] animals){
